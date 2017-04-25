@@ -22,6 +22,37 @@ a {
   color: $secondary-color;
 }
 
+form {
+  margin: 25px 0;
+}
+
+.text-gray {
+  color: $tertiary-color;
+}
+
+.btn-custom {
+  margin-top: 10px;
+  background-color: $additional-color;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 20px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: white;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+
+  &.blue {
+    background-color: $secondary-color;
+  }
+}
+
 .list {
   padding: 25px 0;
   margin-bottom: 35px;
@@ -43,15 +74,29 @@ a {
   time {
     display: block;
     margin-bottom: 10px;
-    color: $tertiary-color;
+  }
+}
+
+.comments {
+  padding: 25px 0;
+  margin-bottom: 35px;
+  border-bottom: 1px solid $gray-light;
+
+  @media (min-width: $screen-sm-min) {
+    padding: 15px 0;
+    margin-bottom: 15px;
   }
 
-  .btn-custom {
-    margin-top: 10px;
-    background-color: $additional-color;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 20px;
+  &:last-child {
+    border: 0;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  time {
+    display: block;
+    margin-bottom: 10px;
   }
 }

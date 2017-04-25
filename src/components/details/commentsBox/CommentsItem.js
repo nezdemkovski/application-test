@@ -40,25 +40,29 @@ export default class CommentsItem extends Component {
     } = this.props.comment;
 
     return (
-      <Row className='show-grid list'>
-        <Row className='show-grid'>
-          <Col xs={6} sm={2} xsOffset={3} smOffset={0}>
-            <Image src={avatar} alt="Avatar" circle responsive />
-          </Col>
-          <Col xs={6} sm={8}>
-            <h3>{firstName} {lastName}</h3>
-            <strong><time>{date}</time></strong>
-          </Col>
-          <Col xs={6} sm={2}>
-            <Button onClick={this._removeComment} bsStyle='custom' block>Remove</Button>
-          </Col>
-        </Row>
-        <Row className='show-grid'>
-          <Col xs={12} sm={10} smOffset={2}>
-            <p>{text}</p>
-          </Col>
-        </Row>
+    <div className='comments'>
+      <Row className='show-grid'>
+        <Col xs={3} sm={2} md={1}>
+          <Image src={avatar} alt="Avatar" circle responsive/>
+        </Col>
+        <Col xs={7} sm={8} md={9}>
+          <h3>{firstName} {lastName}</h3>
+          <time className='text-gray'><strong>{date}</strong></time>
+        </Col>
+        <Col xs={2} xsHidden>
+          <Button onClick={this._removeComment} bsStyle='custom' block>Remove</Button>
+        </Col>
       </Row>
+
+      <Row className='show-grid'>
+        <Col xs={9} sm={10} md={11} xsOffset={3} smOffset={2} mdOffset={1}>
+          <p>{text}</p>
+        </Col>
+        <Col xs={12} smHidden mdHidden lgHidden>
+          <Button onClick={this._removeComment} bsStyle='custom' block>Remove</Button>
+        </Col>
+      </Row>
+    </div>
     );
   }
 }

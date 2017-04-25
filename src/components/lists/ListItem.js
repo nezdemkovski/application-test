@@ -36,7 +36,7 @@ export default class ListItem extends Component {
           </Col>
           <Col xs={12} sm={8} md={9}>
             <h3>{firstName} {lastName}</h3>
-            <time><strong>{date}</strong></time>
+            <time className='text-gray'><strong>{date}</strong></time>
           </Col>
           <Col xs={12} sm={2} xsHidden>
             <LinkContainer to={`/details/${this.props.list._id}`}>

@@ -35,42 +35,36 @@ export default class Details extends Component {
     } = this.props;
 
     return (
-      <div >
-
-
+      <div>
         <Row className='show-grid'>
-          <Row className='show-grid'>
-            <Col xs={4} xsOffset={4}>
-              <Image src={avatar} alt="Avatar" circle responsive />
-            </Col>
-          </Row>
-
-          <Row className='show-grid'>
-            <Col xs={6} sm={8}>
-              <h3>{firstName} {lastName}</h3>
-              <strong><time>{username}</time></strong>
-            </Col>
-            <Col xs={6} sm={2}>
-
-            </Col>
-          </Row>
-
-          <Row className='show-grid'>
-            <Col xs={12}>
-              <p>{text}</p>
-            </Col>
-          </Row>
-
-          <Row className='show-grid'>
-            <Col xs={3} xsOffset={6}>
-              <p>Likes: {likesCount}</p>
-            </Col>
-            <Col xs={3}>
-              <p>Comments: {commentsCount}</p>
-            </Col>
-          </Row>
+          <Col xs={4} sm={2} xsOffset={4} smOffset={5}>
+            <Image src={avatar} alt="Avatar" circle responsive/>
+          </Col>
         </Row>
 
+        <Row className='show-grid'>
+          <Col xs={12}>
+            <h3 className='text-center'>{firstName} {lastName}</h3>
+            <p className='text-center text-gray'><strong>{username}</strong></p>
+          </Col>
+        </Row>
+
+        <hr/>
+
+        <Row className='show-grid'>
+          <Col xs={12}>
+            <p>{text}</p>
+          </Col>
+        </Row>
+
+        <Row className='show-grid'>
+          <Col xs={6} sm={2} smOffset={8}>
+            <p className='text-right'>Likes: {likesCount}</p>
+          </Col>
+          <Col xs={6} sm={2}>
+            <p className='text-right'>Comments: {commentsCount}</p>
+          </Col>
+        </Row>
 
         <AddComment
           detailsId={_id}
