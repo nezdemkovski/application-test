@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Navbar, Row, Col } from 'react-bootstrap';
+
+import './components/common/assets/styles/bootstrap.css';
 import './components/common/assets/styles/front.css';
 
 export default class App extends Component {

@@ -6,6 +6,8 @@ import { connect } from 'react-redux';
 import { fetchLists } from '../components/lists/ListsActions';
 import Lists from '../components/lists/Lists';
 
+import '../components/lists/common/styles/lists.css';
+
 export class HomePage extends Component {
   static propTypes = {
     isLoaded: PropTypes.bool.isRequired,
