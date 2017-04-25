@@ -1,0 +1,25 @@
+@import '../../../common/assets/styles/front.scss';
+
+.comments {
+  padding: 25px 0;
+  margin-bottom: 35px;
+  border-bottom: 1px solid $gray-light;
+
+  @media (min-width: $screen-sm-min) {
+    padding: 15px 0;
+    margin-bottom: 15px;
+  }
+
+  &:last-child {
+    border: 0;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  time {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

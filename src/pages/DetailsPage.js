@@ -5,6 +5,8 @@ import { connect } from 'react-redux';
 import { Row, Pager } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
+import '../components/details/common/styles/details.css';
+
 import {
   fetchDetailsFeed,
   addComment,

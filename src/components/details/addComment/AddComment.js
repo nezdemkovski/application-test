@@ -31,7 +31,12 @@ export default class AddComment extends Component {
         firstName: firstName.value,
         lastName: lastName.value,
         commentText: commentText.value,
-      });
+      }
+    );
+
+    firstName.value = '';
+    lastName.value = '';
+    commentText.value = '';
   }
 
   render() {
@@ -47,7 +52,6 @@ export default class AddComment extends Component {
                 type='text'
                 className='form-control'
                 id='inputFirstName'
-                placeholder='First Name'
                 ref={(input) => { firstName = input; }}
               />
             </div>
@@ -60,7 +64,6 @@ export default class AddComment extends Component {
                 type='text'
                 className='form-control'
                 id='inputLastName'
-                placeholder='Last Name'
                 ref={(input) => { lastName = input; }}
               />
             </div>

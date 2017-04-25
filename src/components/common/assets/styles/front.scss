@@ -1,18 +1,6 @@
 @import './bootstrap.css';
+@import './variables.scss';
 @import '../../../../../node_modules/bourbon/app/assets/stylesheets/bourbon';
-
-$background-color: #F5F5F5;
-$primary-color: #212738;
-$secondary-color: #0ECFF0;
-$tertiary-color: #798085;
-$additional-color: #FB5658;
-$gray-light: #DDDDDD;
-$white-transparent: rgba(0, 0, 0, 0.3);
-
-$screen-xs-min: 480px;
-$screen-sm-min: 768px;
-$screen-md-min: 992px;
-$screen-lg-min: 1200px;
 
 body {
   color: $primary-color;
@@ -50,53 +38,5 @@ form {
 
   &.blue {
     background-color: $secondary-color;
-  }
-}
-
-.list {
-  padding: 25px 0;
-  margin-bottom: 35px;
-  border-bottom: 1px solid $gray-light;
-
-  @media (min-width: $screen-sm-min) {
-    padding: 15px 0;
-    margin-bottom: 15px;
-  }
-
-  &:last-child {
-    border: 0;
-  }
-
-  h3 {
-    margin-top: 10px;
-  }
-
-  time {
-    display: block;
-    margin-bottom: 10px;
-  }
-}
-
-.comments {
-  padding: 25px 0;
-  margin-bottom: 35px;
-  border-bottom: 1px solid $gray-light;
-
-  @media (min-width: $screen-sm-min) {
-    padding: 15px 0;
-    margin-bottom: 15px;
-  }
-
-  &:last-child {
-    border: 0;
-  }
-
-  h3 {
-    margin: 0;
-  }
-
-  time {
-    display: block;
-    margin-bottom: 10px;
   }
 }
