@@ -6,7 +6,8 @@ Inloop Job Application (React SPA)
 ```sh
 $ git clone https://github.com/yakovlevyuri/inloop
 $ cd inloop
-$ yarn build
+$ yarn
+$ yarn start # or yarn build
 ```
 
 License
