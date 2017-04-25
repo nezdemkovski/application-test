@@ -4,8 +4,8 @@ Inloop Job Application (React SPA)
 ### Installation
 
 ```sh
-$ git clone https://github.com/yakovlevyuri/inloop
-$ cd inloop
+$ git clone https://github.com/yakovlevyuri/inloop-application-test
+$ cd inloop-application-test
 $ yarn
 $ yarn start # or yarn build
 ```
