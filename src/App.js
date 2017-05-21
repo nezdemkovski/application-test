@@ -25,7 +25,7 @@ export default class App extends Component {
                 <ul className='list-unstyled'>
                   <li className='pull-right'><a href='#top'>Back to top</a></li>
                 </ul>
-                <p>Made by <a href='http://yakovlevyuri.com' rel='nofollow' target='_blank'>Yuri Yakovlev</a>. Contact me at <a href='mailto:contact@yakovlevyuri.com'>contact@yakovlevyuri.com</a>.</p>
+                <p>Made by <a href='http://yakovlevyuri.com' rel='nofollow noopener noreferrer' target='_blank'>Yuri Yakovlev</a>. Contact me at <a href='mailto:contact@yakovlevyuri.com'>contact@yakovlevyuri.com</a>.</p>
                 <p>Code released under the <a href='https://github.com/yakovlevyuri/inloop-application-test/LICENSE'>MIT License</a>.</p>
               </Col>
             </Row>
